@@ -4,7 +4,7 @@ use std::convert::TryFrom;
 use std::path::PathBuf;
 
 use utils::resource_download::s3_download;
-use vmm::{KernelConfig, MemoryConfig, VMMConfig, VcpuConfig, Vmm, DEFAULT_KERNEL_LOAD_ADDR};
+use nanovmm::{KernelConfig, MemoryConfig, VMMConfig, VcpuConfig, Vmm, DEFAULT_KERNEL_LOAD_ADDR};
 
 fn default_memory_config() -> MemoryConfig {
     MemoryConfig { size_mib: 1024 }
